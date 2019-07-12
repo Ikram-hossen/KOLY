@@ -1,0 +1,440 @@
+/* ---------------------------------------
+	Import Google Fonts
+ ---------------------------------------*/
+/* google font > Open Sans && Raleway */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:400,500");
+
+/*** Start Base css ***/
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff 
+    url('../img/loader.gif') no-repeat center;
+    z-index:100000000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 1px;
+    color: #383737;
+    font-size: 14px;
+}
+.separator{
+    height: 3px;
+    width:80px;
+    background:#007BFF;
+}
+.navbar{
+    box-shadow: 0 1px 5px #909090;
+}
+.navbar li{
+    padding: 15px 6px;
+}
+.navbar li a:hover{
+    display: block;
+    color: #007BFF !important;
+}
+.navbar li a{
+    font-size: 14px;
+}
+.navbar .navbar-toggler{
+    border: none;
+    padding: 17px 0;
+    font-size: 27px;
+}
+.navbar .navbar-toggler .fa-bars{
+    color: #007BFF !important;
+}
+.btn-p,.btn-o-p,.btn-o-l{
+    font-size: 14px;
+    padding: 15px 0px;
+    width: 150px;
+    border-radius: 0;
+}
+.blockBtn{
+    border-radius: 0;
+    font-size: 14px;
+}
+.btn-p:hover{
+    background: #313131;
+    border: 1px solid #313131;
+}
+/*** start banner & particles css ***/
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg-02.jpg') no-repeat;
+    margin-top: 60px;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+  #particles-js .container{
+      position: absolute;
+      left: 0;
+      top:100px;;
+      right:0;
+      bottom: 0;
+  }
+/*** start about css ***/
+#about-section{
+    position: relative;
+}
+#about-section  img{
+    border: 7px solid #fff;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px #d7d4d4;
+}
+#about-section .tab-btn{
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+#about-section .tab-content {
+    border: 1px solid #007BFF;
+}
+
+/*** end about css ***/
+
+/*** Start how-do-section css ***/
+#how-do-section .col-md-5,.col-md-7{
+    margin: 20px 0;
+}
+#how-do-section span{
+    font-size: 30px;
+}
+/*** end how-do-section css ***/
+
+/*** start counter css ***/
+#counterSection{
+    background: url('../img/bg-09.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 100%;
+    position: relative;
+}
+#counterSection::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+}
+#counterSection .container{
+    position: relative;
+    z-index: 1;
+}
+#counterSection .icon{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+#counterSection .fact .timer {
+	display: block;
+	color: #fff;
+	font-size: 4em;
+	line-height: 1;
+	min-height: 56px;
+	font-weight: 400;
+	letter-spacing: 2.5px;
+	margin-bottom: 20px;
+}
+/*** start counter css ***/
+
+/*** start what-can-i-do css ***/
+#what-can-i-do span{
+    font-size: 40px;
+    font-weight: normal;
+    background: #f1f1f1;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+   
+}
+#what-can-i-do .col-lg-4:hover span{
+    background: #007BFF !important;
+    color: #fff !important;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    outline: 4px solid #007BFF;
+    -moz-outline-radius: 100%;
+    line-height: 65px;
+    cursor: pointer;
+}
+/*** end what-can-i-do css ***/
+
+/*** start experienceSection  css ***/
+#experienceSection{
+    position: relative;
+}
+#experienceSection .col-md-3 h4{
+    padding: 10px 15px;
+    background: #007BFF;
+    color: #fff;
+    display: inline-table;
+    margin-right: 23%;
+    text-align: center;
+}
+#experienceSection .col-md-3 .icon{
+    color: #007BFF;
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+    right: 7%;
+}
+
+#experienceSection .content-wrapper{
+    border-radius: 0;
+}
+#experienceSection .content-wrapper::after{
+    position: absolute;
+    content: '';
+    height: 35px;
+    width: 35px;
+    background: #d5d2d2;
+    top: 7px;
+    left: 15px;
+    transform: translateX(-19px) rotate(45deg);
+    z-index: -1;
+}
+/*** end what-can-i-do css ***/
+
+/*** end experienceSection css ***/
+#serviceSection{
+    background: url('../img/section-bg-02.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+#serviceSection::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+#serviceSection .text-center{
+    position: relative;
+    z-index: 1;
+}
+/*** end serviceSection css ***/
+
+/*** Start SkillsSection css ***/
+#skillsSection{
+    background: url('../img/skills.jpg') no-repeat;
+    background-size: cover;
+    background-position: left top;
+    padding: 100px 0;
+    position: relative;
+}
+#skillsSection::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+#skillsSection .text-center{
+    position: relative;
+    z-index: 1;
+}
+#skillsSection .col-md-3 .chart{
+    position: relative;
+    line-height: 150px;
+    color: #fff;
+    font-size: 30px;
+   
+}
+#skillsSection .container canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*** end SkillsSection css ***/
+
+/*** start portfolio css ***/
+#portfolio .controls-btn .text-dark{
+    font-size: 14px;
+}
+#portfolio .controls-btn .text-dark:hover,#portfolio .active{
+    color:#fff !important;
+}
+
+#portfolio .project{
+    position: relative;
+    cursor: pointer;
+}
+#portfolio .project .img-overlay{
+ overflow: hidden;
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ background: rgba(0, 0, 0, 0.6);
+ transition: all 0.5s ease-in-out;
+ opacity: 0;
+ visibility: hidden;
+}   
+#portfolio .project:hover .img-overlay{
+    opacity: 1;
+    visibility: visible;
+} 
+#portfolio .project .overlay-text{
+    position: absolute;
+	left: 0px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	bottom: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+} 
+/*** end portfolio css ***/
+
+/*** start testimonial css ***/
+#testimonial{
+    background: url('../img/testimonials.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+#testimonial::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+#testimonial .container{
+    position: relative;
+    z-index: 1;
+}
+/*** end testimonial css ***/
+
+/*** start clientsSection css ***/
+#clientsSection img{
+    border: 1px solid rgb(160, 160, 160);
+    opacity: 0.5;
+}
+#clientsSection img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+/*** end clientsSection css ***/
+
+/*** end clientsSection css ***/
+#Keep-in-touch{
+    background: url('../img/contact.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#Keep-in-touch::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+#Keep-in-touch .container{
+    position: relative;
+    z-index: 1;
+}
+#Keep-in-touch input{
+    background: rgba(200, 200, 200, 0.1);
+    border: 1px solid rgba(182, 182, 182, 0.5);
+}
+#Keep-in-touch textarea{
+    background: rgba(200, 200, 200, 0.1);
+    border: 1px solid rgba(182, 182, 182, 0.5);
+}
+#Keep-in-touch .input-group-text{
+    background: rgba(200, 200, 200, 0.4);
+    border: 1px solid rgba(182, 182, 182, 0.2);
+}
+/* left side style */
+#Keep-in-touch .call-info{
+    overflow: hidden;
+    width: 40px;
+}
+#Keep-in-touch .call-info:hover{
+    /* background: #007BFF; */
+}
+#Keep-in-touch .call-info,
+#Keep-in-touch .call-info i,
+#Keep-in-touch .call-info p,
+#Keep-in-touch .call-info h4 {
+    position: relative;
+}
+#Keep-in-touch .call-info span{
+	display: inline-block;
+	font-size: 30px;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 20px;
+	line-height: 60px;
+	border-radius: 50%;
+	color: #fff;
+    top: 50px;
+}
+#Keep-in-touch .call-info p {
+	margin-bottom: 0; 
+	letter-spacing: 1px;
+	bottom: -70px;
+	opacity: 0;
+}
+#Keep-in-touch .call-info:hover span{
+    background: #fff;
+     top: 0px;
+}
+#Keep-in-touch .call-info:hover h4 {
+    top: 0px;
+} 
+#Keep-in-touch .call-info:hover p{
+	bottom: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+/*** end clientsSection css ***/
